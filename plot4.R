@@ -9,7 +9,7 @@ plot4 <- function()
 	par(mfrow=c(2,2))
 	## Drawing the Graph (1)
 	plot(strptime(paste(h_power_cons$Date, h_power_cons$Time, sep=" "), "%d/%m/%Y %H:%M:%S"), h_power_cons$Global_active_power, 
-				type="l", xlab="", ylab="Global Active Power (Kilowatts)")
+				type="l", xlab="", ylab="Global Active Power")
 
 	## Drawing the Graph (2)
 	plot(strptime(paste(h_power_cons$Date, h_power_cons$Time, sep=" "), "%d/%m/%Y %H:%M:%S"), h_power_cons$Voltage, 

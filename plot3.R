@@ -18,7 +18,7 @@ plot3 <- function()
 
 	## Setting the Title and Legend
 	title(ylab="Energy sub metering")
-	legend("topright", inset=.05, c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col=c("black","red","blue"),lty=1)
+	legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col=c("black","red","blue"),lty=1)
 
 	dev.copy(png, file="plot3.png") ## Copy the Graph to a PNG File
 	dev.off()  ## Closing the PNG Device
